@@ -1,71 +1,5 @@
-/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/page.module.css ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************/
-/* page.module.css */
-.page_container__aoG4z {
-  display: flex;
-  margin: 4px;
-  height: 100vh; /* Ensure the layout fills the viewport height */
-}
-
-.page_LeftSection__EVFJt {
-  margin: 2px;
-  flex: 0.7 1; /* Slightly more width for the left filter section */
-}
-
-.page_MiddleSection__yXArI {
-  margin: 8px;
-  flex: 2.4 1; /* Adjusted width for the middle section */
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Ensure the middle section takes up the full height */
-  overflow-y: auto; /* Make this section scrollable */
-}
-
-/* Ensure the RightSection takes full height */
-.page_RightSection__Hltwy {
-  margin: 2px;
-  flex: 1 1; /* Reduced width of the right section */
-  height: 100%; /* Ensure the right section takes up the full height */
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; /* Prevent overflow */
-}
-
-
-.page_TopFilter__NnaB7 {
-  flex-shrink: 0; /* Prevent shrinking */
-}
-
-.page_CardsSection__G4mF0 {
-  flex-grow: 1; /* Allow this section to grow */
-  overflow-y: auto; /* Make this section scrollable */
-  border-radius: 6px;
-  background-color: white;
-  max-height: calc(100vh - 140px); /* Ensure the middle section is scrollable */
-}
-
-.page_cardDisplay___FlSQ {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 11px; /* Add spacing between cards */
-  padding: 10px;
-  justify-content: flex-start; /* Align cards to the start */
-  background-color: white;
-}
-.page_card__QV0Om{
-  width: 49%;
-}
-
-/* Removed .card, .cardContent, .cardTitle, .cardSubtitle, .cardTags, .cardTag since they are now handled in the component */
-.page_FilterChipsDisplay__o46mr {
-  padding-top: 10px;
-  padding-left: 10px;
-  background-color: white;
-}
-
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/components/PendingActionsComponets/PendingActionsTable.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/PendingActionsComponets/PendingActionsTable.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* PendingActionsTable.module.css */
 .PendingActionsTable_container__Rq6Yw {
@@ -178,5 +112,71 @@
     .PendingActionsTable_card__XbeNT {
         padding: 8px;
     }
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+/* page.module.css */
+.page_container__aoG4z {
+  display: flex;
+  margin: 4px;
+  height: 100vh; /* Ensure the layout fills the viewport height */
+}
+
+.page_LeftSection__EVFJt {
+  margin: 2px;
+  flex: 0.7 1; /* Slightly more width for the left filter section */
+}
+
+.page_MiddleSection__yXArI {
+  margin: 8px;
+  flex: 2.4 1; /* Adjusted width for the middle section */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure the middle section takes up the full height */
+  overflow-y: auto; /* Make this section scrollable */
+}
+
+/* Ensure the RightSection takes full height */
+.page_RightSection__Hltwy {
+  margin: 2px;
+  flex: 1 1; /* Reduced width of the right section */
+  height: 100%; /* Ensure the right section takes up the full height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent overflow */
+}
+
+
+.page_TopFilter__NnaB7 {
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.page_CardsSection__G4mF0 {
+  flex-grow: 1; /* Allow this section to grow */
+  overflow-y: auto; /* Make this section scrollable */
+  border-radius: 6px;
+  background-color: white;
+  max-height: calc(100vh - 140px); /* Ensure the middle section is scrollable */
+}
+
+.page_cardDisplay___FlSQ {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px; /* Add spacing between cards */
+  padding: 10px;
+  justify-content: flex-start; /* Align cards to the start */
+  background-color: white;
+}
+.page_card__QV0Om{
+  width: 49%;
+}
+
+/* Removed .card, .cardContent, .cardTitle, .cardSubtitle, .cardTags, .cardTag since they are now handled in the component */
+.page_FilterChipsDisplay__o46mr {
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: white;
 }
 
