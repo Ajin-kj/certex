@@ -1,0 +1,62 @@
+/* page.module.css */
+.container {
+  display: flex;
+  margin: 4px;
+  height: 100vh; /* Ensure the layout fills the viewport height */
+}
+
+.LeftSection {
+  margin: 2px;
+  flex: 0.7; /* Slightly more width for the left filter section */
+}
+
+.MiddleSection {
+  margin: 8px;
+  flex: 2.4; /* Adjusted width for the middle section */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure the middle section takes up the full height */
+  overflow-y: auto; /* Make this section scrollable */
+}
+
+/* Ensure the RightSection takes full height */
+.RightSection {
+  margin: 2px;
+  flex: 1; /* Reduced width of the right section */
+  height: 100%; /* Ensure the right section takes up the full height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent overflow */
+}
+
+
+.TopFilter {
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.CardsSection {
+  flex-grow: 1; /* Allow this section to grow */
+  overflow-y: auto; /* Make this section scrollable */
+  border-radius: 6px;
+  background-color: white;
+  max-height: calc(100vh - 140px); /* Ensure the middle section is scrollable */
+}
+
+.cardDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px; /* Add spacing between cards */
+  padding: 10px;
+  justify-content: flex-start; /* Align cards to the start */
+  background-color: white;
+}
+.card{
+  width: 49%;
+}
+
+/* Removed .card, .cardContent, .cardTitle, .cardSubtitle, .cardTags, .cardTag since they are now handled in the component */
+.FilterChipsDisplay {
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: white;
+}

@@ -1,0 +1,112 @@
+/* PendingActionsTable.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 84%; /* Ensure it takes full height */
+    background-color: white; /* Full white background for the section */
+    padding: 8px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    border-radius: 4px; /* Add border radius to create a more professional look */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.cardsContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: calc(100vh - 180px); /* Adjust based on available space in the container */
+    padding: 4px;
+    background-color: #f9f9f9; /* Slight grey background for the card section */
+    border-radius: 8px; /* Rounded corners for the card container */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer; /* Make the card clickable */
+    min-height: 70px; /* Further reduce the card height */
+    width: 98%; /* Make the card take more width */
+    max-width: 400px; /* Limit the card width for readability */
+    margin: 0 auto; /* Center the card within the container */
+}
+
+.cardContent {
+    padding: 8px;
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 16px; /* Increase font size slightly */
+    margin-bottom: 4px; /* Reduce padding above and below the title */
+}
+
+.cardRemarks {
+    font-size: 14px;
+    color: #555;
+}
+
+.cardTitle,
+.cardRemarks {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.cardProvider {
+    font-size: 14px;
+    color: #777;
+    margin-top: 4px; /* Add a bit of spacing between remarks and provider */
+}
+
+/* Styling for the "No pending actions" message */
+.noPendingActionsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; /* Add spacing between the icon and text */
+    height: 100%; /* Full height to center content */
+    text-align: center;
+}
+
+.noPendingActionsIcon {
+    font-size: 40px; /* Larger icon for better visibility */
+    color: #888; /* Light grey color for the icon */
+}
+
+.noPendingActionsText {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .cardsContainer {
+        max-height: calc(100vh - 220px); /* Adjust for smaller screens */
+    }
+
+    .card {
+        padding: 8px;
+    }
+}

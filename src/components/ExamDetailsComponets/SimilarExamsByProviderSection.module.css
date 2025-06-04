@@ -1,0 +1,78 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white; /* Set the background color of the entire section to white */
+  padding: 3px; /* Padding for the section */
+  margin: -10px; /* Removed margin as per request */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px; /* Reduced space below title */
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333; /* Make the title a bit darker for contrast */
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column; /* Arrange cards vertically */
+  gap: 10px;
+  overflow-y: auto; /* Make the container scrollable vertically */
+  max-height: 67vh; /* Reduced max-height byF 3px */
+  min-height: 65vh; /* Ensure that the container maintains the same height even with no certifications */
+  padding: 5px;
+  border-radius: 8px; /* Rounded corners for the section */
+  padding-right: 0;
+}
+
+.noCertMessageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgb(239, 239, 239);
+  height: 100%; /* Ensure it takes the full height of the container */
+}
+
+.noCertMessage {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #888;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cardWrapper {
+  cursor: pointer;
+  /* Additional styling for cards can go here */
+}
+
+.noExamsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  text-align: center;
+}
+
+.noExamsIcon {
+  font-size: 40px;
+  color: #c5c5c5;
+}
+
+.noExamsText {
+  color: #888;
+  font-size: 14px;
+  margin-top: 8px;
+}

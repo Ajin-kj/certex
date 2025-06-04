@@ -1,0 +1,256 @@
+/* Add space below the divider (hr tag) */
+.divider {
+  margin-bottom: 10px; /* Reduced margin below divider, added small space */
+}
+
+/* Compact Provider Info Section */
+.providerInfo {
+  margin-top: 0.25rem; /* Reduced margin above the provider name */
+  margin-bottom: 0.25rem; /* Reduced margin below the provider name */
+}
+
+.providerName {
+  font-size: 1rem; /* Adjust font size to make it smaller */
+  margin: 0; /* Remove margin above and below */
+  font-weight: normal; /* Make the text a bit lighter */
+}
+
+.certificationName{
+  font-weight: 300;
+  font: 100;
+}
+
+/* Reduce padding and margin around the description */
+.description {
+  margin-bottom: 0.5rem; /* Reduced bottom margin */
+  line-height: 1.4; /* Slightly tighter line spacing */
+}
+
+/* Overall compact the main content */
+.certificationDetails {
+  padding: 1rem; /* Reduced padding */
+  margin-bottom: 1rem; /* Reduced bottom margin */
+}
+
+/* Slightly compact the header */
+.header {
+  margin-bottom: 20px; /* Reduced bottom margin */
+}
+
+.container {
+  display: flex;
+  gap: 1rem; /* Increased space between sections */
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 90vh;
+  background-color: #f5f5f5;
+  padding: 0.5rem; /* Adjusted padding around the entire container */
+}
+
+.mainSection {
+  flex: 1;
+  min-width: 0;
+  height: 76vh; /* Reduced height of the main section */
+  background-color: white;
+  padding: 1.5rem; /* Adjusted padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+/* Example CSS for loadingContainer */
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 200px; /* Adjust this height as needed */
+}
+
+.loadingText {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+
+.similarSection {
+  width: 355px;
+  background-color: white;
+  padding: 1.5rem; /* Adjusted padding */
+  border-radius: 8px;
+  position: sticky;
+  top: 11vh;
+  height: 75.6vh; /* Set similar section height to match the main section */
+  max-height: 76vh; /* Ensures no vertical overflow */
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-left: -5px;
+}
+
+.certificationDetails {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 15px;
+}
+
+.levelChip {
+  height: 28px;
+  font-weight: 600;
+}
+
+.providerInfo {
+  margin-bottom: 0.5rem; /* Adjusted to compact the section */
+}
+
+.description {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background-color: white;
+}
+
+.divider {
+  margin: 1.5rem 0 0.5rem 0; /* Added small space after the divider */
+}
+
+.nominationInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 10px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  color: #666;
+  width: 18px;
+  height: 18px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nominateButton {
+  min-width: 200px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.alert {
+  margin-top: 1.5rem;
+}
+
+.similarTitle {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.similarCards {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.similarCards::-webkit-scrollbar {
+  width: 6px;
+}
+
+.similarCards::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.similarCards::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.similarCards::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.loadingContainer,
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    padding: 1.5rem; /* Adjusted padding for smaller screens */
+  }
+
+  .similarSection {
+    width: 100%;
+    min-width: 0;
+    padding: 1.5rem;
+    position: static;
+    height: auto;
+  }
+
+  .similarCards {
+    display: grid;/* Ensure cards take full width in grid */
+    gap: 1.5rem;
+    max-height: 800px;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    gap: 1rem;
+  }
+
+  .mainSection,
+  .similarSection {
+    padding: 1rem;
+  }
+
+  .certificationDetails {
+    padding: 1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .nominateButton {
+    width: 100%;
+  }
+}
